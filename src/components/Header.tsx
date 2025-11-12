@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, Search } from "lucide-react";
 import logoSebrae from "@/assets/logo-sebrae-hq.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SearchDialog from "@/components/SearchDialog";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -56,7 +57,16 @@ const Header = () => {
             })}
           </nav>
           
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
+            <SearchDialog 
+              trigger={
+                <Button variant="ghost" size="icon" className="text-foreground hover:text-primary">
+                  <Search className="h-5 w-5" />
+                  <span className="sr-only">Buscar</span>
+                </Button>
+              }
+            />
+            
             <Button 
               variant="outline" 
               className="hidden sm:inline-flex border-primary text-primary hover:bg-primary hover:text-primary-foreground"
