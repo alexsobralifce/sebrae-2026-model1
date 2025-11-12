@@ -1,4 +1,4 @@
-import logoSebrae from "@/assets/logo-sebrae.png";
+import logoSebrae from "@/assets/logo-sebrae-hq.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import logoSebrae from "@/assets/logo-sebrae.png";
+import logoSebrae from "@/assets/logo-sebrae-hq.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
