@@ -19,6 +19,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import SearchDialog from "@/components/SearchDialog";
 import ContactFormDialog from "@/components/ContactFormDialog";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Consultorias = () => {
   const { ref: heroRef, isVisible: heroVisible } = useIntersectionObserver({ threshold: 0.2 });
@@ -254,6 +255,7 @@ const Consultorias = () => {
       
       <Footer />
       <ScrollToTop />
+      <WhatsAppButton />
     </div>
   );
 };
