@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Search } from "lucide-react";
-import logoSebrae from "@/assets/logo-sebrae-hq.png";
+import logoSebraeSmall from "@/assets/logo-sebrae-small.png";
+import logoSebraeMedium from "@/assets/logo-sebrae-medium.png";
+import logoSebraeLarge from "@/assets/logo-sebrae-large.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SearchDialog from "@/components/SearchDialog";
@@ -27,11 +29,15 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <img 
-              src={logoSebrae}
-              alt="Sebrae" 
-              className="h-12 md:h-14 w-auto"
-            />
+            <picture>
+              <source media="(min-width: 1024px)" srcSet={logoSebraeLarge} />
+              <source media="(min-width: 640px)" srcSet={logoSebraeMedium} />
+              <img 
+                src={logoSebraeSmall}
+                alt="Sebrae Logo" 
+                className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto"
+              />
+            </picture>
           </div>
           
           <nav className="hidden md:flex items-center gap-8">
@@ -85,11 +91,14 @@ const Header = () => {
               <SheetContent side="right" className="w-[280px] sm:w-[350px]">
                 <div className="flex flex-col h-full">
                   <div className="mb-8">
-                    <img 
-                      src={logoSebrae}
-                      alt="Sebrae" 
-                      className="h-10 w-auto"
-                    />
+                    <picture>
+                      <source media="(min-width: 640px)" srcSet={logoSebraeMedium} />
+                      <img 
+                        src={logoSebraeSmall}
+                        alt="Sebrae Logo" 
+                        className="h-10 w-auto"
+                      />
+                    </picture>
                   </div>
                   
                   <nav className="flex flex-col gap-4 flex-1">
