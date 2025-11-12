@@ -86,13 +86,15 @@ const ConsultingSection = () => {
                 </Button>
               </Link>
               
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-bold text-base px-8"
-              >
-                Fichas Técnicas
-              </Button>
+              <a href="/fichas-tecnicas.pdf" download>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-bold text-base px-8"
+                >
+                  Fichas Técnicas
+                </Button>
+              </a>
             </div>
           </div>
         </div>

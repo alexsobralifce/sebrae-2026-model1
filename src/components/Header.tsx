@@ -4,6 +4,7 @@ import { Menu, Search } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SearchDialog from "@/components/SearchDialog";
+import ContactFormDialog from "@/components/ContactFormDialog";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -46,12 +47,16 @@ const Header = () => {
               }
             />
             
-            <Button 
-              variant="outline" 
-              className="hidden sm:inline-flex border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              Fale Conosco
-            </Button>
+            <ContactFormDialog
+              trigger={
+                <Button 
+                  variant="outline" 
+                  className="hidden sm:inline-flex border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                >
+                  Fale Conosco
+                </Button>
+              }
+            />
             
             {/* Mobile Menu */}
             <Sheet open={open} onOpenChange={setOpen}>
@@ -82,12 +87,16 @@ const Header = () => {
                     ))}
                   </nav>
                   
-                  <Button 
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mt-auto"
-                    size="lg"
-                  >
-                    Fale Conosco
-                  </Button>
+                  <ContactFormDialog
+                    trigger={
+                      <Button 
+                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mt-auto"
+                        size="lg"
+                      >
+                        Fale Conosco
+                      </Button>
+                    }
+                  />
                 </div>
               </SheetContent>
             </Sheet>

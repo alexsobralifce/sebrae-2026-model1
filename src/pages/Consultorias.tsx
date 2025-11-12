@@ -18,6 +18,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import SearchDialog from "@/components/SearchDialog";
+import ContactFormDialog from "@/components/ContactFormDialog";
 
 const Consultorias = () => {
   const { ref: heroRef, isVisible: heroVisible } = useIntersectionObserver({ threshold: 0.2 });
@@ -238,9 +239,13 @@ const Consultorias = () => {
                     Baixar Fichas Técnicas
                   </Button>
                 </a>
-                <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base px-8">
-                  Agendar Atendimento
-                </Button>
+                <ContactFormDialog
+                  trigger={
+                    <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base px-8">
+                      Agendar Atendimento
+                    </Button>
+                  }
+                />
               </div>
             </div>
           </div>
