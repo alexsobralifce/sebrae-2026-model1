@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import ConsultingSection from "@/components/ConsultingSection";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
         <ConsultingSection />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
