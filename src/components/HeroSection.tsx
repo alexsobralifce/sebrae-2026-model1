@@ -22,7 +22,9 @@ const HeroSection = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              <span className="text-primary">Portfólio Sebrae CE</span>
+              <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+                Portfólio Sebrae
+              </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Apoiamos você a gerir e desenvolver negócios em qualquer fase da jornada empreendedora dos nossos clientes.
