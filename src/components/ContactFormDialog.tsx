@@ -23,6 +23,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { MessageCircle, CheckCircle2, Clock, Phone } from "lucide-react";
+import { formatPhoneNumber } from "@/lib/utils";
 
 const contactFormSchema = z.object({
   name: z
@@ -186,7 +187,11 @@ const ContactFormDialog = ({ trigger }: ContactFormDialogProps) => {
                           type="tel"
                           placeholder="(11) 99999-9999"
                           {...field}
-                          maxLength={20}
+                          maxLength={15}
+                          onChange={(e) => {
+                            const formatted = formatPhoneNumber(e.target.value);
+                            field.onChange(formatted);
+                          }}
                         />
                       </FormControl>
                       <FormMessage />
