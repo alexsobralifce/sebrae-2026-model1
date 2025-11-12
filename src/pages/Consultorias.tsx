@@ -42,11 +42,15 @@ const Consultorias = () => {
       title: "Planejamento Estratégico",
       icon: Target,
       fichas: [
-        { name: "Planejamento Empresarial", icon: TrendingUp, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Análise SWOT", icon: Target, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Definição de Missão, Visão e Valores", icon: Award, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Mapeamento de Stakeholders", icon: Users, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Modelagem de Negócios de Impacto", icon: Building, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Planejamento empresarial", icon: TrendingUp, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Plano de negócio", icon: FileSpreadsheet, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Gestão de rotinas e organização", icon: ClipboardCheck, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Modelagem de negócio", icon: Building, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Gestão de riscos", icon: Scale, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Gestão ágil com OKRs", icon: Target, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Revisão do planejamento empresarial", icon: ClipboardCheck, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Monitoramento da estratégia", icon: TrendingUp, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Modelagem de negócios de impacto", icon: Award, pdf: "/fichas-tecnicas.pdf" },
       ]
     },
     {
@@ -54,11 +58,21 @@ const Consultorias = () => {
       title: "Gestão de Pessoas",
       icon: Users,
       fichas: [
-        { name: "Desenvolvimento de Lideranças", icon: Award, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Gestão de Clima Organizacional", icon: Users, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Avaliação de Desempenho", icon: ClipboardCheck, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Recrutamento e Seleção", icon: Users, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Política de Reconhecimento e Incentivo", icon: Award, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Desenvolvimento de lideranças", icon: Award, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Gestão de equipes e conflitos", icon: Users, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Gestão de desempenho", icon: TrendingUp, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Atração e seleção de talentos", icon: Users, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Provimento de talentos", icon: Users, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Descrição e análise de cargos", icon: ClipboardCheck, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Integração de novos funcionários", icon: Users, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Manual do funcionário", icon: FileSpreadsheet, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Estruturação do programa de treinamentos", icon: Award, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Mapeamento do perfil funcional", icon: ClipboardCheck, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Mapeamento estratégico em gestão de pessoas", icon: Target, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Monitoramento em gestão de pessoas", icon: TrendingUp, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Pesquisa de clima organizacional", icon: ClipboardCheck, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Plano de cargos, salários e carreira", icon: FileSpreadsheet, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Política de reconhecimento e incentivo", icon: Award, pdf: "/fichas-tecnicas.pdf" },
       ]
     },
     {
@@ -66,11 +80,20 @@ const Consultorias = () => {
       title: "Marketing e Vendas",
       icon: Megaphone,
       fichas: [
-        { name: "Monitoramento Mercadológico", icon: TrendingUp, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Pesquisa de Mercado", icon: ClipboardCheck, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Monitoramento mercadológico", icon: TrendingUp, pdf: "/fichas-tecnicas.pdf" },
         { name: "Plano de Marketing", icon: Target, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Marketing Digital", icon: MonitorSmartphone, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Estratégias de Comunicação", icon: Megaphone, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Plano de Marketing digital", icon: MonitorSmartphone, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Mapeamento da experiência do cliente", icon: Users, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Estruturação da área comercial", icon: Building, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Geração de conteúdo com IA", icon: MonitorSmartphone, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Implementação de ferramenta de gestão mkt", icon: MonitorSmartphone, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Análise de ambiente de ponto comercial", icon: MapPin, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Análise de localização de ponto comercial", icon: MapPin, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Gestão de vendas", icon: ShoppingCart, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Implementação de área comercial Omnichannel", icon: Globe, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Avaliação, orçamento e retorno de investimento", icon: Calculator, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Gestão em IA", icon: MonitorSmartphone, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Estratégias de comunicação", icon: Megaphone, pdf: "/fichas-tecnicas.pdf" },
       ]
     },
     {
@@ -78,11 +101,11 @@ const Consultorias = () => {
       title: "Legislação",
       icon: Scale,
       fichas: [
-        { name: "Registro de Marca", icon: Stamp, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Patentes", icon: Award, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Desenho Industrial", icon: Building, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Indicação Geográfica", icon: MapPin, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Transferência de Titularidade de Marca", icon: Scale, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Registro de marca", icon: Stamp, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Mapeamento de risco jurídico", icon: Scale, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Elaboração e revisão de contratos", icon: FileSpreadsheet, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Regularização de empreendimentos rurais e urbanos", icon: Building, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Transferência de titularidade de marca", icon: Scale, pdf: "/fichas-tecnicas.pdf" },
       ]
     },
     {
@@ -90,13 +113,20 @@ const Consultorias = () => {
       title: "Finanças",
       icon: DollarSign,
       fichas: [
-        { name: "Gestão de Compras e Estoques", icon: ShoppingCart, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Indicadores de Desempenho Econômico", icon: TrendingUp, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Auditoria Financeira e Contábil", icon: FileSpreadsheet, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Planejamento Tributário", icon: Calculator, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Planejamento Financeiro", icon: PieChart, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Gestão de compras e estoques", icon: Package, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Indicadores de desempenho econômico", icon: TrendingUp, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Auditoria financeira e contábil", icon: FileSpreadsheet, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Planejamento tributário", icon: Calculator, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Planejamento financeiro", icon: PieChart, pdf: "/fichas-tecnicas.pdf" },
         { name: "Monitoramento Financeiro", icon: TrendingUp, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Gestão de Folha de Pagamento e Encargos", icon: Receipt, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Viabilidade econômica e financeira (EVTE)", icon: Calculator, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Viabilidade econômica e financeira EVTE - PROED", icon: Calculator, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Valuation", icon: Wallet, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Controles financeiros essenciais", icon: ClipboardCheck, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Custo e formação de preço", icon: DollarSign, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Gestão do fluxo de caixa e capital de giro", icon: DollarSign, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Demonstrativos de Resultado Gerencial", icon: FileSpreadsheet, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Gestão de folha de pagamento e encargos", icon: Receipt, pdf: "/fichas-tecnicas.pdf" },
       ]
     },
     {
@@ -104,16 +134,16 @@ const Consultorias = () => {
       title: "Negócios Internacionais",
       icon: Globe,
       fichas: [
-        { name: "Consultoria em Comércio Exterior - Importação", icon: Ship, pdf: "/fichas-tecnicas.pdf" },
-        { name: "Consultoria em Comércio Exterior - Exportação", icon: Plane, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Consultoria em comércio Exterior - importação", icon: Ship, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Consultoria em comércio Exterior - exportação", icon: Plane, pdf: "/fichas-tecnicas.pdf" },
       ]
     },
     {
       id: "associativismo",
-      title: "Associativismo e Cooperação",
+      title: "Associativismo e Cooperativismo",
       icon: HandshakeIcon,
       fichas: [
-        { name: "Associativismo e Cooperação", icon: HandshakeIcon, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Associativismo e cooperativismo", icon: HandshakeIcon, pdf: "/fichas-tecnicas.pdf" },
       ]
     },
     {
@@ -121,7 +151,7 @@ const Consultorias = () => {
       title: "Tecnologia da Informação",
       icon: MonitorSmartphone,
       fichas: [
-        { name: "Pesquisa de Satisfação", icon: ClipboardCheck, pdf: "/fichas-tecnicas.pdf" },
+        { name: "Pesquisa de satisfação", icon: ClipboardCheck, pdf: "/fichas-tecnicas.pdf" },
       ]
     },
   ];
