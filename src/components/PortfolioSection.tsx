@@ -19,12 +19,9 @@ const PortfolioSection = () => {
             titleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Conheça Nossos Tipos de <span className="text-primary">Portfólio</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+            Tipos de <span className="text-primary">Portfólio</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Escolha a modalidade que melhor se adapta às necessidades do seu negócio
-          </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
