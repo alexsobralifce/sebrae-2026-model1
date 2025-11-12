@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
 import consultingImg from "@/assets/consulting-meeting.jpg";
 import { CheckCircle2 } from "lucide-react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 const ConsultingSection = () => {
+  const { ref: imageRef, isVisible: imageVisible } = useIntersectionObserver({ threshold: 0.2 });
+  const { ref: contentRef, isVisible: contentVisible } = useIntersectionObserver({ threshold: 0.2 });
+  
   const benefits = [
     "Diagnóstico completo da sua empresa",
     "Planos de ação personalizados",
@@ -14,7 +18,12 @@ const ConsultingSection = () => {
     <section id="consultoria" className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="relative order-2 lg:order-1">
+          <div 
+            ref={imageRef}
+            className={`relative order-2 lg:order-1 transition-all duration-1000 ${
+              imageVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+            }`}
+          >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src={consultingImg} 
@@ -28,7 +37,12 @@ const ConsultingSection = () => {
             <div className="absolute -z-10 -bottom-10 -right-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl"></div>
           </div>
           
-          <div className="space-y-8 order-1 lg:order-2">
+          <div 
+            ref={contentRef}
+            className={`space-y-8 order-1 lg:order-2 transition-all duration-1000 delay-200 ${
+              contentVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+            }`}
+          >
             <div className="inline-block">
               <span className="text-secondary font-bold text-sm uppercase tracking-wider bg-secondary/10 px-4 py-2 rounded-full">
                 Especialistas
@@ -48,7 +62,13 @@ const ConsultingSection = () => {
             
             <div className="space-y-3">
               {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-3">
+                <div 
+                  key={index} 
+                  className={`flex items-start gap-3 transition-all duration-500 ${
+                    contentVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-5"
+                  }`}
+                  style={{ transitionDelay: `${400 + index * 100}ms` }}
+                >
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <span className="text-foreground font-medium">{benefit}</span>
                 </div>
