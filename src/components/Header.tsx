@@ -10,7 +10,7 @@ const Header = () => {
             <img 
               src={logoSebrae}
               alt="Sebrae" 
-              className="h-10 w-auto"
+              className="h-12 md:h-14 w-auto"
             />
           </div>
           

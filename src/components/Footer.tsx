@@ -9,7 +9,7 @@ const Footer = () => {
             <img 
               src={logoSebrae}
               alt="Sebrae" 
-              className="h-10 w-auto brightness-0 invert"
+              className="h-12 md:h-14 w-auto brightness-0 invert"
             />
             <p className="text-primary-foreground/80 text-sm">
               Transformando o futuro dos negócios brasileiros desde 1972.
