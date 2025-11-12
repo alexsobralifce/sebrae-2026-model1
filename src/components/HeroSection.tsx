@@ -1,4 +1,4 @@
-import heroCollage from "@/assets/hero-collage.png";
+import heroCollage from "@/assets/hero-collage-new.jpg";
 import innovationImg from "@/assets/innovation-abstract.jpg";
 import managementImg from "@/assets/management-abstract.jpg";
 import sustainabilityImg from "@/assets/sustainability-abstract.jpg";
