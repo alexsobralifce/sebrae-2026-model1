@@ -25,7 +25,7 @@ const HeroSection = () => {
               <span className="text-primary">Portfólio Sebrae CE</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Acesse fichas técnicas organizadas por categoria para apoiar suas consultorias especializadas.
+              Apoiamos você a gerir e desenvolver negócios em qualquer fase da jornada empreendedora dos nossos clientes.
             </p>
           </div>
           
