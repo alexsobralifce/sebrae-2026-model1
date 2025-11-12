@@ -3,13 +3,14 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import logoSebrae from "@/assets/logo-sebrae.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   
   const menuItems = [
     { label: "Portfólio", href: "#portfolio" },
-    { label: "Consultoria", href: "#consultoria" },
+    { label: "Consultoria", href: "/consultorias" },
     { label: "Contato", href: "#contato" },
   ];
   
@@ -33,15 +34,26 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center gap-8">
-            {menuItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
-                {item.label}
-              </a>
-            ))}
+            {menuItems.map((item) => {
+              const isExternal = item.href.startsWith('#');
+              return isExternal ? (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
           
           <div className="flex items-center gap-4">
@@ -71,15 +83,27 @@ const Header = () => {
                   </div>
                   
                   <nav className="flex flex-col gap-4 flex-1">
-                    {menuItems.map((item) => (
-                      <button
-                        key={item.href}
-                        onClick={() => handleNavClick(item.href)}
-                        className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors py-3 border-b border-border hover:border-primary"
-                      >
-                        {item.label}
-                      </button>
-                    ))}
+                    {menuItems.map((item) => {
+                      const isExternal = item.href.startsWith('#');
+                      return isExternal ? (
+                        <button
+                          key={item.href}
+                          onClick={() => handleNavClick(item.href)}
+                          className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors py-3 border-b border-border hover:border-primary"
+                        >
+                          {item.label}
+                        </button>
+                      ) : (
+                        <Link
+                          key={item.href}
+                          to={item.href}
+                          onClick={() => setOpen(false)}
+                          className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors py-3 border-b border-border hover:border-primary"
+                        >
+                          {item.label}
+                        </Link>
+                      );
+                    })}
                   </nav>
                   
                   <Button 

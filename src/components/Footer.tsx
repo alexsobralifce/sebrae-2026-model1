@@ -1,4 +1,5 @@
 import logoSebrae from "@/assets/logo-sebrae.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,17 +21,17 @@ const Footer = () => {
             <h3 className="font-bold mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#portfolio" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a href="/#portfolio" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Portfólio
                 </a>
               </li>
               <li>
-                <a href="#consultoria" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link to="/consultorias" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Consultoria
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contato" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a href="/#contato" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Contato
                 </a>
               </li>

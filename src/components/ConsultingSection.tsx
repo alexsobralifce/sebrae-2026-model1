@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import consultingImg from "@/assets/consulting-meeting.jpg";
 import { CheckCircle2 } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import { Link } from "react-router-dom";
 
 const ConsultingSection = () => {
   const { ref: imageRef, isVisible: imageVisible } = useIntersectionObserver({ threshold: 0.2 });
@@ -76,12 +77,14 @@ const ConsultingSection = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button 
-                size="lg" 
-                className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-coral)] font-bold text-base px-8"
-              >
-                Conheça nossas Consultorias
-              </Button>
+              <Link to="/consultorias">
+                <Button 
+                  size="lg" 
+                  className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-coral)] font-bold text-base px-8"
+                >
+                  Conheça nossas Consultorias
+                </Button>
+              </Link>
               
               <Button 
                 size="lg" 
