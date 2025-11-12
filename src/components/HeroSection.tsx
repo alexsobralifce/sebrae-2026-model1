@@ -22,8 +22,7 @@ const HeroSection = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Sistema de Fichas Técnicas{" "}
-              <span className="text-primary">para Consultores</span>
+              <span className="text-primary">Portfólio Sebrae CE</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Acesse fichas técnicas organizadas por categoria para apoiar suas consultorias especializadas.
