@@ -23,19 +23,19 @@ All colors MUST be HSL.
     --primary-glow: 210 70% 55%;
     
     /* Dourado/Âmbar - Accent CTA color */
-    --accent: 38 85% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 42 95% 55%;
+    --accent-foreground: 222.2 47.4% 11.2%;
     
     /* Azul escuro - Secondary */
     --secondary: 210 50% 30%;
     --secondary-foreground: 0 0% 100%;
 
     /* Cores complementares */
-    --coral: 38 85% 50%;
-    --coral-light: 38 90% 65%;
+    --coral: 42 95% 55%;
+    --coral-light: 42 100% 70%;
     --purple-deep: 210 70% 55%;
     --green-dark: 210 50% 25%;
-    --brown-deep: 38 70% 35%;
+    --brown-deep: 35 75% 40%;
     
     --muted: 210 20% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -51,14 +51,14 @@ All colors MUST be HSL.
     
     /* Gradientes Sebrae */
     --gradient-teal: linear-gradient(135deg, hsl(210, 65%, 45%) 0%, hsl(210, 70%, 55%) 100%);
-    --gradient-coral: linear-gradient(135deg, hsl(38, 85%, 50%) 0%, hsl(38, 90%, 65%) 100%);
+    --gradient-coral: linear-gradient(135deg, hsl(42, 95%, 55%) 0%, hsl(42, 100%, 70%) 100%);
     --gradient-purple: linear-gradient(135deg, hsl(210, 50%, 30%) 0%, hsl(210, 65%, 45%) 100%);
-    --gradient-sage: linear-gradient(135deg, hsl(210, 65%, 45%) 0%, hsl(38, 85%, 50%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(210, 70%, 55%) 0%, hsl(38, 85%, 50%) 50%, hsl(210, 65%, 45%) 100%);
+    --gradient-sage: linear-gradient(135deg, hsl(210, 65%, 45%) 0%, hsl(42, 95%, 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210, 70%, 55%) 0%, hsl(42, 95%, 55%) 50%, hsl(210, 65%, 45%) 100%);
     
     /* Sombras com efeito de brilho */
-    --shadow-teal: 0 10px 40px -10px hsl(210 65% 45% / 0.3);
-    --shadow-coral: 0 10px 40px -10px hsl(38 85% 50% / 0.3);
+    --shadow-teal: 0 10px 40px -10px hsl(210 65% 45% / 0.4);
+    --shadow-coral: 0 10px 40px -10px hsl(42 95% 55% / 0.5);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -94,17 +94,17 @@ All colors MUST be HSL.
     --primary-foreground: 0 0% 100%;
     --primary-glow: 210 75% 65%;
 
-    --accent: 38 85% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 42 95% 60%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 210 55% 35%;
     --secondary-foreground: 0 0% 100%;
 
-    --coral: 38 85% 55%;
-    --coral-light: 38 90% 70%;
+    --coral: 42 95% 60%;
+    --coral-light: 42 100% 75%;
     --purple-deep: 210 75% 60%;
     --green-dark: 210 55% 30%;
-    --brown-deep: 38 75% 40%;
+    --brown-deep: 35 80% 45%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
