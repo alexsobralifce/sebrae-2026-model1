@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Home, FileText } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,12 +11,14 @@ const Footer = () => {
               <h3 className="font-bold mb-4 text-center">Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  <Link to="/" className="flex items-center justify-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    <Home className="w-4 h-4" />
                     Início
                   </Link>
                 </li>
                 <li>
-                  <Link to="/consultorias" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  <Link to="/consultorias" className="flex items-center justify-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    <FileText className="w-4 h-4" />
                     Fichas Técnicas
                   </Link>
                 </li>
