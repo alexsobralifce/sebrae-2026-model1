@@ -9,17 +9,10 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   
   const menuItems = [
-    { label: "Portfólio", href: "#portfolio" },
+    { label: "Portfólio", href: "/#portfolio" },
     { label: "Consultoria", href: "/consultorias" },
-    { label: "Contato", href: "#contato" },
+    { label: "Contato", href: "/#contato" },
   ];
-  
-  const handleNavClick = (href: string) => {
-    setOpen(false);
-    setTimeout(() => {
-      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
-    }, 300);
-  };
   
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 shadow-sm">
@@ -32,26 +25,15 @@ const Header = () => {
           </Link>
           
           <nav className="hidden md:flex items-center gap-8">
-            {menuItems.map((item) => {
-              const isExternal = item.href.startsWith('#');
-              return isExternal ? (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium"
-                >
-                  {item.label}
-                </a>
-              ) : (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium"
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
+            {menuItems.map((item) => (
+              <Link
+                key={item.href}
+                to={item.href}
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
           
           <div className="flex items-center gap-2">
@@ -88,27 +70,16 @@ const Header = () => {
                   </div>
                   
                   <nav className="flex flex-col gap-4 flex-1">
-                    {menuItems.map((item) => {
-                      const isExternal = item.href.startsWith('#');
-                      return isExternal ? (
-                        <button
-                          key={item.href}
-                          onClick={() => handleNavClick(item.href)}
-                          className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors py-3 border-b border-border hover:border-primary"
-                        >
-                          {item.label}
-                        </button>
-                      ) : (
-                        <Link
-                          key={item.href}
-                          to={item.href}
-                          onClick={() => setOpen(false)}
-                          className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors py-3 border-b border-border hover:border-primary"
-                        >
-                          {item.label}
-                        </Link>
-                      );
-                    })}
+                    {menuItems.map((item) => (
+                      <Link
+                        key={item.href}
+                        to={item.href}
+                        onClick={() => setOpen(false)}
+                        className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors py-3 border-b border-border hover:border-primary"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
                   </nav>
                   
                   <Button 
