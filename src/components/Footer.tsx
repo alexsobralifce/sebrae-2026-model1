@@ -1,18 +1,16 @@
+import logoSebrae from "@/assets/logo-sebrae.png";
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
-            <svg 
-              viewBox="0 0 200 60" 
-              className="h-10 w-auto"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect x="10" y="10" width="40" height="40" rx="8" className="fill-primary-foreground"/>
-              <text x="60" y="40" className="fill-primary-foreground font-bold text-2xl" style={{ fontFamily: 'Inter, sans-serif' }}>SEBRAE</text>
-            </svg>
+            <img 
+              src={logoSebrae}
+              alt="Sebrae" 
+              className="h-10 w-auto brightness-0 invert"
+            />
             <p className="text-primary-foreground/80 text-sm">
               Transformando o futuro dos negócios brasileiros desde 1972.
             </p>

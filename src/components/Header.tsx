@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logoSebrae from "@/assets/logo-sebrae.png";
 
 const Header = () => {
   return (
@@ -6,15 +7,11 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <svg 
-              viewBox="0 0 200 60" 
-              className="h-12 w-auto"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect x="10" y="10" width="40" height="40" rx="8" className="fill-primary"/>
-              <text x="60" y="40" className="fill-foreground font-bold text-2xl" style={{ fontFamily: 'Inter, sans-serif' }}>SEBRAE</text>
-            </svg>
+            <img 
+              src={logoSebrae}
+              alt="Sebrae" 
+              className="h-10 w-auto"
+            />
           </div>
           
           <nav className="hidden md:flex items-center gap-8">
