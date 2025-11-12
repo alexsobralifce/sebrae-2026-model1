@@ -76,25 +76,15 @@ const ConsultingSection = () => {
               ))}
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="pt-4">
               <Link to="/consultorias">
                 <Button 
                   size="lg" 
                   className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-coral)] font-bold text-base px-8"
                 >
-                  Conheça nossas Consultorias
+                  Ver Fichas Técnicas
                 </Button>
               </Link>
-              
-              <a href="/fichas-tecnicas.pdf" download>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-bold text-base px-8"
-                >
-                  Fichas Técnicas
-                </Button>
-              </a>
             </div>
           </div>
         </div>

@@ -1,18 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Search } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import SearchDialog from "@/components/SearchDialog";
-import ContactFormDialog from "@/components/ContactFormDialog";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   
   const menuItems = [
-    { label: "Portfólio", href: "/#portfolio" },
-    { label: "Consultoria", href: "/consultorias" },
-    { label: "Contato", href: "/#contato" },
+    { label: "Início", href: "/" },
+    { label: "Fichas Técnicas", href: "/consultorias" },
   ];
   
   return (
@@ -38,26 +35,6 @@ const Header = () => {
           </nav>
           
           <div className="flex items-center gap-2">
-            <SearchDialog 
-              trigger={
-                <Button variant="ghost" size="icon" className="text-foreground hover:text-primary">
-                  <Search className="h-5 w-5" />
-                  <span className="sr-only">Buscar</span>
-                </Button>
-              }
-            />
-            
-            <ContactFormDialog
-              trigger={
-                <Button 
-                  variant="outline" 
-                  className="hidden sm:inline-flex border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                >
-                  Fale Conosco
-                </Button>
-              }
-            />
-            
             {/* Mobile Menu */}
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild className="md:hidden">
@@ -74,7 +51,7 @@ const Header = () => {
                     </span>
                   </div>
                   
-                  <nav className="flex flex-col gap-4 flex-1">
+                  <nav className="flex flex-col gap-4">
                     {menuItems.map((item) => (
                       <Link
                         key={item.href}
@@ -86,17 +63,6 @@ const Header = () => {
                       </Link>
                     ))}
                   </nav>
-                  
-                  <ContactFormDialog
-                    trigger={
-                      <Button 
-                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mt-auto"
-                        size="lg"
-                      >
-                        Fale Conosco
-                      </Button>
-                    }
-                  />
                 </div>
               </SheetContent>
             </Sheet>
