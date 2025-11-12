@@ -17,25 +17,25 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 47.4% 11.2%;
 
-    /* 2026 Transformative Teal - Primary brand color */
-    --primary: 185 75% 35%;
+    /* Azul Sebrae - Primary brand color */
+    --primary: 210 65% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 185 80% 50%;
+    --primary-glow: 210 70% 55%;
     
-    /* 2026 Pale Banana/Lime - Accent CTA color */
-    --accent: 85 75% 65%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Dourado/Âmbar - Accent CTA color */
+    --accent: 38 85% 50%;
+    --accent-foreground: 0 0% 100%;
     
-    /* 2026 Sage Green - Secondary */
-    --secondary: 150 30% 45%;
+    /* Azul escuro - Secondary */
+    --secondary: 210 50% 30%;
     --secondary-foreground: 0 0% 100%;
 
-    /* 2026 Trending Colors */
-    --coral: 15 75% 55%;
-    --coral-light: 15 80% 70%;
-    --purple-deep: 290 45% 40%;
-    --green-dark: 160 45% 20%;
-    --brown-deep: 20 60% 15%;
+    /* Cores complementares */
+    --coral: 38 85% 50%;
+    --coral-light: 38 90% 65%;
+    --purple-deep: 210 70% 55%;
+    --green-dark: 210 50% 25%;
+    --brown-deep: 38 70% 35%;
     
     --muted: 210 20% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -45,20 +45,20 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 185 75% 35%;
-
+    --ring: 210 65% 45%;
+    
     --radius: 0.75rem;
     
-    /* Gradients for 2026 design */
-    --gradient-teal: linear-gradient(135deg, hsl(185, 75%, 35%) 0%, hsl(185, 80%, 50%) 100%);
-    --gradient-coral: linear-gradient(135deg, hsl(15, 75%, 55%) 0%, hsl(45, 85%, 65%) 100%);
-    --gradient-purple: linear-gradient(135deg, hsl(290, 45%, 40%) 0%, hsl(15, 75%, 55%) 100%);
-    --gradient-sage: linear-gradient(135deg, hsl(150, 30%, 45%) 0%, hsl(85, 75%, 65%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(185, 80%, 50%) 0%, hsl(85, 75%, 65%) 50%, hsl(15, 75%, 55%) 100%);
+    /* Gradientes Sebrae */
+    --gradient-teal: linear-gradient(135deg, hsl(210, 65%, 45%) 0%, hsl(210, 70%, 55%) 100%);
+    --gradient-coral: linear-gradient(135deg, hsl(38, 85%, 50%) 0%, hsl(38, 90%, 65%) 100%);
+    --gradient-purple: linear-gradient(135deg, hsl(210, 50%, 30%) 0%, hsl(210, 65%, 45%) 100%);
+    --gradient-sage: linear-gradient(135deg, hsl(210, 65%, 45%) 0%, hsl(38, 85%, 50%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210, 70%, 55%) 0%, hsl(38, 85%, 50%) 50%, hsl(210, 65%, 45%) 100%);
     
-    /* Shadows with glow effect */
-    --shadow-teal: 0 10px 40px -10px hsl(185 75% 35% / 0.3);
-    --shadow-coral: 0 10px 40px -10px hsl(15 75% 55% / 0.3);
+    /* Sombras com efeito de brilho */
+    --shadow-teal: 0 10px 40px -10px hsl(210 65% 45% / 0.3);
+    --shadow-coral: 0 10px 40px -10px hsl(38 85% 50% / 0.3);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -90,21 +90,21 @@ All colors MUST be HSL.
     --popover: 222.2 47.4% 11.2%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 185 80% 50%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --primary-glow: 185 90% 60%;
+    --primary: 210 70% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 75% 65%;
 
-    --accent: 85 75% 65%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 38 85% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    --secondary: 150 30% 45%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 55% 35%;
+    --secondary-foreground: 0 0% 100%;
 
-    --coral: 15 75% 55%;
-    --coral-light: 15 80% 70%;
-    --purple-deep: 290 45% 50%;
-    --green-dark: 160 45% 25%;
-    --brown-deep: 20 60% 20%;
+    --coral: 38 85% 55%;
+    --coral-light: 38 90% 70%;
+    --purple-deep: 210 75% 60%;
+    --green-dark: 210 55% 30%;
+    --brown-deep: 38 75% 40%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -114,7 +114,7 @@ All colors MUST be HSL.
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 185 80% 50%;
+    --ring: 210 70% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
