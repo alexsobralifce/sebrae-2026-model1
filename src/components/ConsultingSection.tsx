@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import consultingImg from "@/assets/consulting-meeting.jpg";
+import consultingImg from "@/assets/consulting-gestao.jpg";
 import { CheckCircle2 } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import { Link } from "react-router-dom";
