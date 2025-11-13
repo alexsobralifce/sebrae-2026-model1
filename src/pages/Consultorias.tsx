@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import { useEffect } from "react";
 import { 
   Target,
   Users,
@@ -36,6 +37,11 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 const Consultorias = () => {
   const { ref: heroRef, isVisible: heroVisible } = useIntersectionObserver({ threshold: 0.2 });
+  
+  // Força scroll para o topo quando o componente monta
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   const consultingCategories = [
     {

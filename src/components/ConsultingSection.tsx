@@ -77,7 +77,15 @@ const ConsultingSection = () => {
             </div>
             
             <div className="pt-4">
-              <Link to="/consultorias">
+              <Link 
+                to="/consultorias"
+                onClick={() => {
+                  // Força scroll para o topo após a navegação
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }, 100);
+                }}
+              >
                 <Button 
                   size="lg" 
                   className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-coral)] font-bold text-base px-8"
