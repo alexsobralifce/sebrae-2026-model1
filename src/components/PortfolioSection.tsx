@@ -51,15 +51,15 @@ const PortfolioSection = () => {
                   Solução Presencial
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Consultoria, cursos e atendimento especializado em nossos pontos de atendimento. 
-                  Experiência personalizada com especialistas dedicados ao crescimento do seu negócio.
+                  As soluções na modalidade presencial podem ocorrer nas Agências Sebrae ou em locais parceiros.
                 </p>
                 
                 <Button 
                   size="lg" 
-                  className="w-full bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-coral)] font-bold"
+                  className="w-full text-white hover:opacity-90 shadow-[var(--shadow-coral)] font-bold"
+                  style={{ backgroundColor: '#0f438a' }}
                 >
-                  Ver Soluções Presenciais
+                  Clique e acesse o portfólio
                 </Button>
               </div>
             </Card>
@@ -91,15 +91,15 @@ const PortfolioSection = () => {
                   Solução Online
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Acesse nossas ferramentas, cursos EAD e consultoria digital de onde estiver. 
-                  Flexibilidade e tecnologia para impulsionar seu negócio 24/7.
+                  As soluções na modalidade online ocorrem por meio de webinars, lives ou videoaulas gravadas, disponíveis no Portal do Sebrae CE.
                 </p>
                 
                 <Button 
                   size="lg" 
-                  className="w-full bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-coral)] font-bold"
+                  className="w-full text-white hover:opacity-90 shadow-[var(--shadow-coral)] font-bold"
+                  style={{ backgroundColor: '#69be5c' }}
                 >
-                  Ver Soluções Online
+                  Clique e acesse os conteúdos
                 </Button>
               </div>
             </Card>

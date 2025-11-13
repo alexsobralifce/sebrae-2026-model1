@@ -16,7 +16,7 @@ const Header = () => {
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <nav className="hidden md:flex items-center gap-8">
+          {/* <nav className="hidden md:flex items-center gap-8">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
@@ -26,12 +26,14 @@ const Header = () => {
                 {item.label}
               </Link>
             ))}
-          </nav>
+          </nav> */}
           
           <Link to="/" className="flex items-center md:ml-auto">
-            <span className="text-[#005CA9] font-extrabold italic text-3xl sm:text-4xl md:text-5xl tracking-tight">
-              SEBRAE
-            </span>
+            <img 
+              src="/img/sebrae.png" 
+              alt="SEBRAE" 
+              className="h-12 sm:h-14 md:h-16 w-auto"
+            />
           </Link>
           
           <div className="flex items-center gap-2 md:hidden">
@@ -46,9 +48,11 @@ const Header = () => {
               <SheetContent side="right" className="w-[280px] sm:w-[350px]">
                 <div className="flex flex-col h-full">
                   <div className="mb-8">
-                    <span className="text-[#005CA9] font-extrabold italic text-3xl tracking-tight">
-                      SEBRAE
-                    </span>
+                    <img 
+                      src="/img/sebrae.png" 
+                      alt="SEBRAE" 
+                      className="h-10 w-auto"
+                    />
                   </div>
                   
                   <nav className="flex flex-col gap-4">

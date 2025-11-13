@@ -26,7 +26,8 @@ import {
   Ship,
   Plane,
   ClipboardCheck,
-  Download
+  Download,
+  ArrowLeft
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -169,6 +170,19 @@ const Consultorias = () => {
           <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            {/* Botão Voltar */}
+            <div className="mb-8">
+              <Link to="/">
+                <Button 
+                  variant="outline" 
+                  className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 backdrop-blur-sm"
+                >
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  Voltar à Página Principal
+                </Button>
+              </Link>
+            </div>
+            
             <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${
               heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}>

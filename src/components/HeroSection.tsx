@@ -26,16 +26,11 @@ const HeroSection = () => {
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Conteúdo de texto */}
           <div className={`space-y-8 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}>
-            <div className="inline-block">
-              <span className="text-accent font-bold text-sm uppercase tracking-wider bg-white/10 px-4 py-2 rounded-full">
-                Sebrae 2026
-              </span>
-            </div>
-            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Apoiamos você a{" "}
               <span className="text-accent">gerir e desenvolver</span>
@@ -43,47 +38,31 @@ const HeroSection = () => {
               negócios em qualquer fase da jornada empreendedora
             </h1>
             
-            <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 leading-relaxed">
               Consultoria especializada, cursos, ferramentas e atendimento personalizado 
               para transformar seu negócio e impulsionar resultados.
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link to="/consultorias">
-                <Button 
-                  variant="golden" 
-                  size="lg"
-                  className="text-lg px-8 py-6 rounded-full hover:scale-105 transition-transform w-full sm:w-auto"
-                >
-                  Ver Fichas Técnicas
-                </Button>
-              </Link>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="text-lg px-8 py-6 rounded-full border-2 border-white text-white hover:bg-white hover:text-primary transition-all w-full sm:w-auto"
-              >
-                Fale Conosco
-              </Button>
-            </div>
-            
-            {/* Cards de serviços */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
-              {services.map((service, index) => {
-                const IconComponent = service.icon;
-                return (
-                  <div
-                    key={index}
-                    className={`bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 transition-all duration-500 hover:bg-white/20 hover:scale-105 ${
-                      isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                    }`}
-                    style={{ transitionDelay: `${400 + index * 150}ms` }}
-                  >
-                    <IconComponent className="w-10 h-10 text-accent mx-auto mb-3" />
-                    <p className="text-white font-semibold text-center">{service.text}</p>
-                  </div>
-                );
-              })}
+          </div>
+
+          {/* Imagem */}
+          <div className={`transition-all duration-1000 delay-300 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}>
+            <div className="relative group">
+              <img 
+                src="/img/foto_sem_fundo.png" 
+                alt="Representação visual do apoio ao empreendedorismo do SEBRAE"
+                className="w-full h-auto max-w-md lg:max-w-lg mx-auto rounded-2xl shadow-2xl border-2 border-white/20 transition-transform duration-500 group-hover:scale-105"
+                onError={(e) => {
+                  e.currentTarget.src = "/logo-sebrae-hq.png";
+                }}
+              />
+              
+              {/* Overlay gradient para melhor integração */}
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent rounded-2xl"></div>
+              
+              {/* Efeito de brilho */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
             </div>
           </div>
         </div>
