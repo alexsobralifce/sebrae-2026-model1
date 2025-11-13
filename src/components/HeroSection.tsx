@@ -50,7 +50,7 @@ const HeroSection = () => {
           }`}>
             <div className="relative group">
               <img 
-                src="/img/foto_sem_fundo.png" 
+                src="/foto_sem_fundo.png" 
                 alt="Representação visual do apoio ao empreendedorismo do SEBRAE"
                 className="w-full h-auto max-w-md lg:max-w-lg mx-auto rounded-2xl shadow-2xl border-2 border-white/20 transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {

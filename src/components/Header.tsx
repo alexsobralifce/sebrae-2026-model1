@@ -30,7 +30,7 @@ const Header = () => {
           
           <Link to="/" className="flex items-center md:ml-auto">
             <img 
-              src="/img/sebrae.png" 
+              src="/sebrae.png" 
               alt="SEBRAE" 
               className="h-12 sm:h-14 md:h-16 w-auto"
             />
@@ -49,7 +49,7 @@ const Header = () => {
                 <div className="flex flex-col h-full">
                   <div className="mb-8">
                     <img 
-                      src="/img/sebrae.png" 
+                      src="/sebrae.png" 
                       alt="SEBRAE" 
                       className="h-10 w-auto"
                     />
