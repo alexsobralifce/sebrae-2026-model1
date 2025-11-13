@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Home, FileText } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -8,8 +8,8 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   
   const menuItems = [
-    { label: "Início", href: "/", icon: Home },
-    { label: "Fichas Técnicas", href: "/consultorias", icon: FileText },
+    { label: "Início", href: "/" },
+    { label: "Fichas Técnicas", href: "/consultorias" },
   ];
   
   return (
@@ -17,19 +17,15 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <nav className="hidden md:flex items-center gap-8">
-            {menuItems.map((item) => {
-              const IconComponent = item.icon;
-              return (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  className="flex items-center gap-2 text-foreground hover:text-primary transition-all duration-300 font-medium group"
-                >
-                  <IconComponent className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  {item.label}
-                </Link>
-              );
-            })}
+            {menuItems.map((item) => (
+              <Link
+                key={item.href}
+                to={item.href}
+                className="text-foreground hover:text-primary transition-all duration-300 font-medium"
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
           
           <Link to="/" className="flex items-center md:ml-auto">
@@ -56,20 +52,16 @@ const Header = () => {
                   </div>
                   
                   <nav className="flex flex-col gap-4">
-                    {menuItems.map((item) => {
-                      const IconComponent = item.icon;
-                      return (
-                        <Link
-                          key={item.href}
-                          to={item.href}
-                          onClick={() => setOpen(false)}
-                          className="flex items-center gap-3 text-left text-lg font-medium text-foreground hover:text-primary transition-colors py-3 border-b border-border hover:border-primary"
-                        >
-                          <IconComponent className="w-5 h-5" />
-                          {item.label}
-                        </Link>
-                      );
-                    })}
+                    {menuItems.map((item) => (
+                      <Link
+                        key={item.href}
+                        to={item.href}
+                        onClick={() => setOpen(false)}
+                        className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors py-3 border-b border-border hover:border-primary"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
                   </nav>
                 </div>
               </SheetContent>
